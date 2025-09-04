@@ -12,7 +12,7 @@ function App() {
     setDetails({});
 
     try {
-      const res = await fetch('http://localhost:3001/api/verify', {
+      const res = await fetch('https://gst-verifier.vercel.app/api/verify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ gstNo })
